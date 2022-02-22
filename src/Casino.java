@@ -54,19 +54,7 @@ public class Casino {
 				break;
 			case 5: //Allows the selected player to play a round on the selected machine 
 				player.getBalance();
-				do {
-					int i = 0;
-					int j = 0;
-					int count = 0;
-					play(currentPlayer, currentMachine);
-					
-					for(int j1 = 1; j1<500; j1++) {
-						count+=1;
-					}
-					currentMachine = machines[i + 1];
-					
-					System.out.println("The player played: "+ count + " times!");
-				}while (player.getBalance() != 0);
+				play(currentPlayer, currentMachine);
 				break;
 			case 6: //Exits the program
 				System.out.println("Goodbye!");
